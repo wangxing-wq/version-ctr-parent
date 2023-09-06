@@ -18,6 +18,7 @@
         <hutool.version>5.8.11</hutool.version>
         <jjwt.version>0.11.2</jjwt.version>
         <wx.common.version>1.0-SNAPSHOT</wx.common.version>
+        <mapstruct.version>1.5.5.Final</mapstruct.version>
     </properties>
 
     <dependencyManagement>
@@ -51,7 +52,11 @@
             </dependency>
 
             <!--   工具类版管理         -->
-
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct</artifactId>
+                <version>${mapstruct.version}</version>
+            </dependency>
             <dependency>
                 <groupId>cn.hutool</groupId>
                 <artifactId>hutool-all</artifactId>
