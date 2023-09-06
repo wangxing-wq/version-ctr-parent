@@ -8,7 +8,6 @@
     <packaging>pom</packaging>
 
     <name>version-ctr-parent</name>
-    <url>http://maven.apache.org</url>
 
     <properties>
         <spring.boot-manager>2.3.12.RELEASE</spring.boot-manager>
@@ -22,7 +21,7 @@
     </properties>
 
     <dependencyManagement>
-        <!--    版本依赖管理https://github.com/alibaba/spring-cloud-alibaba/wiki/%E7%89%88%E6%9C%AC%E8%AF%B4%E6%98%8E   -->
+        <!--    版本依赖管理https://github.com/alibaba/spring-cloud-alibaba/wiki/%E7%89%88%E6%9C%AC%E8    %AF%B4%E6%98%8E   -->
         <dependencies>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
@@ -43,8 +42,6 @@
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>
                 <version>${spring.cloud-alibaba.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
             </dependency>
             <!--    dao层次的版本管理        -->
             <dependency>
@@ -54,11 +51,6 @@
             </dependency>
 
             <!--   工具类版管理         -->
-            <dependency>
-                <groupId>com.wx</groupId>
-                <artifactId>wx-common</artifactId>
-                <version>${wx.common.version}</version>
-            </dependency>
 
             <dependency>
                 <groupId>cn.hutool</groupId>
@@ -75,7 +67,6 @@
                 <groupId>io.jsonwebtoken</groupId>
                 <artifactId>jjwt-impl</artifactId>
                 <version>${jjwt.version}</version>
-                <scope>runtime</scope>
             </dependency>
 
         </dependencies>
