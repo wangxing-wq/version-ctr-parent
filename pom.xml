@@ -25,6 +25,7 @@
         <jjwt.version>0.11.2</jjwt.version>
         <wx.common.version>1.0-SNAPSHOT</wx.common.version>
         <mapstruct.version>1.5.5.Final</mapstruct.version>
+        <fastjson.version>2.0.28</fastjson.version>
     </properties>
 
     <dependencyManagement>
@@ -89,7 +90,11 @@
                 <artifactId>jjwt-impl</artifactId>
                 <version>${jjwt.version}</version>
             </dependency>
-
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
